@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://example.com/oldcards"
+        xmlns:tns="http://example.com/oldcards"
+        elementFormDefault="qualified">
+    <element name="old-cards">
+        <complexType>
+            <sequence>
+                <element ref="tns:regular-postcard"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+    
+    <complexType name="Regular-postcard">
+        <sequence>
+            <element name="theme" type="tns:Theme"/>
+            <element name="country" type="string"/>
+            <element name="realese-year" type="date"/>
+            <element name="is-sent" type="boolean"/>
+            <element name="valuable" type="tns:Valuable"/>
+        </sequence>
+        <attribute name="author" type="tns:Author" use="optional"/>
+        <attribute name="id" type="tns:Id" use="required"/>
+    </complexType>
+
+    <complexType name="Promotional-postcard">
+        <complexContent>
+            <extension base="tns:Regular-postcard">
+                       <sequence>
+                           <element name="telephone" type="positiveInteger"/>
+                       </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Greeting-postcard">
+        <complexContent>
+            <extension base="tns:Regular-postcard">
+                        <sequence>
+                            <element name="type" type="string"/>
+                        </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="Theme">
+        <restriction base="string">
+            <enumeration value="nature"/>
+            <enumeration value="sport"/>
+            <enumeration value="religion"/>
+            <enumeration value="people"/>
+            <enumeration value="symbolism"/>
+            <enumeration value="townscape"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Valuable">
+        <restriction base="string">
+            <enumeration value="thematic"/>
+            <enumeration value="historical"/>
+            <enumeration value="collectible"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Author">
+        <restriction base="string">
+            <pattern value="[a-zA-Z]{2,}"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Id">
+        <restriction base="ID">
+            <pattern value="\w{1,20}"/>
+        </restriction>
+    </simpleType>
+    <element name="regular-postcard" type="tns:Regular-postcard"/>
+    <element name="promotional-postcard" type="tns:Promotional-postcard" substitutionGroup="tns:regular-postcard"/>
+    <element name="greeting-postcard" type="tns:Greeting-postcard" substitutionGroup="tns:regular-postcard"/>
+</schema>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encodin="UTF-8" ?>
+<old-cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://example.com/oldcards"
+           xsi:schemaLocation="http://example.com/oldcards OldCards.xsd">
+            <regular-postcard author="Sidorov" id="id1">
+                <theme>nature</theme>
+                <country>Russia</country>
+                <realese-year>2019-10-20</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>thematic</valuable>
+            </regular-postcard>
+            <regular-postcard author="Petrov" id="id2">
+                <theme>sport</theme>
+                <country>Belarus</country>
+                <realese-year>2020-11-04</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>thematic</valuable>
+            </regular-postcard>
+            <regular-postcard id="id3">
+                <theme>religion</theme>
+                <country>England</country>
+                <realese-year>2021-07-10</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>historical</valuable>
+            </regular-postcard>
+            <regular-postcard author="Novikova" id="id4">
+                <theme>people</theme>
+                <country>Ukraine</country>
+                <realese-year>2018-02-17</realese-year>
+                <is-sent>false</is-sent>
+                <valuable>collectible</valuable>
+            </regular-postcard>
+            <promotional-postcard author="EPAM" id="id5">
+                <theme>symbolism</theme>
+                <country>Belarus</country>
+                <telephone>+375337151310</telephone>
+                <realese-year>2020-12-18</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>thematic</valuable>
+            </promotional-postcard>
+            <promotional-postcard author="IBA" id="id6">
+                <theme>symbolism</theme>
+                <country>USA</country>
+                <telephone>+375293242701</telephone>
+                <realese-year>2017-10-12</realese-year>
+                <is-sent>false</is-sent>
+                <valuable>thematic</valuable>
+            </promotional-postcard>
+            <promotional-postcard id="id7">
+                <theme>nature</theme>
+                <country>Italy</country>
+                <telephone>+375442957300</telephone>
+                <realese-year>2019-09-08</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>historical</valuable>
+            </promotional-postcard>
+            <promotional-postcard author="Evroopt" id="id8">
+                <theme>townscape</theme>
+                <country>Russia</country>
+                <telephone>+375298369502</telephone>
+                <realese-year>2021-11-25</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>collectible</valuable>
+            </promotional-postcard>
+            <promotional-postcard author="Almi" id="id9">
+                <theme>symbolism</theme>
+                <country>Belarus</country>
+                <telephone>+375331325377</telephone>
+                <realese-year>2021-04-13</realese-year>
+                <is-sent>false</is-sent>
+                <valuable>thematic</valuable>
+            </promotional-postcard>
+            <promotional-postcard author="Sosedi" id="id10">
+                <theme>nature</theme>
+                <country>Ukraine</country>
+                <telephone>+375336155130</telephone>
+                <realese-year>2016-09-10</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>collectible</valuable>
+            </promotional-postcard>
+            <greeting-postcard author="Ernest" id="id11">
+                <theme>people</theme>
+                <country>Spain</country>
+                <realese-year>2021-03-16</realese-year>
+                <is-sent>true</is-sent>
+                <type>anniversary</type>
+                <valuable>thematic</valuable>
+            </greeting-postcard>
+            <greeting-postcard author="Wenger" id="id12">
+                <theme>nature</theme>
+                <country>Denmark</country>
+                <realese-year>2017-05-10</realese-year>
+                <is-sent>false</is-sent>
+                <type>christmas</type>
+                <valuable>historical</valuable>
+            </greeting-postcard>
+            <greeting-postcard author="Alonso" id="id13">
+                <theme>townscape</theme>
+                <country>Spain</country>
+                <realese-year>2019-11-30</realese-year>
+                <is-sent>true</is-sent>
+                <valuable>thematic</valuable>
+            </greeting-postcard>
+            <greeting-postcard id="id14">
+                <theme>nature</theme>
+                <country>Brazil</country>
+                <realese-year>2015-01-20</realese-year>
+                <is-sent>false</is-sent>
+                <type>anniversary</type>
+                <valuable>historical</valuable>
+            </greeting-postcard>
+            <greeting-postcard author="Somnus" id="id15">
+                <theme>religion</theme>
+                <country>China</country>
+                <realese-year>2020-05-09</realese-year>
+                <is-sent>true</is-sent>
+                <type>wedding</type>
+                <valuable>historical</valuable>
+            </greeting-postcard>
+            <greeting-postcard id="id16">
+                <theme>nature</theme>
+                <country>Ukraine</country>
+                <realese-year>2019-10-02</realese-year>
+                <is-sent>false</is-sent>
+                <type>anniversary</type>
+                <valuable>collectible</valuable>
+            </greeting-postcard>
+
+
+</old-cards>
